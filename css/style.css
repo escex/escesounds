@@ -1,0 +1,238 @@
+    /* HEADER */
+.top-page{
+    position: relative;
+    height: 84px;
+}
+
+.navegador {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    width: 500px;
+    margin-top: 0px;
+}
+
+.navegador ul li a:hover {
+    transition: color 0.5s; /* Add a color transition animation */
+    transition: background-color 0.5s; /* Add a color transition animation */
+    color: white;
+    background-color: black;
+}
+
+.navegador nav {
+    top: 0;
+    
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+.titulo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: -12px;
+}
+
+.titulo h2 {
+    font-size:large;
+    font-weight: 500;
+    margin-left: 4px;
+    margin-top: -10px;
+}
+
+.titulosMain p {
+    font-family: monospace;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.videoClips {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%;
+}
+
+.galeriaVideos {
+    width: 100%;
+    overflow: hidden;
+}
+
+.titulosMain {
+    text-align: center; /* Center the content horizontally */
+    background-color: #f2f2f2; /* Set the background color for the container */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+.formularioContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+
+}
+
+.mensajeContacto {
+    resize: none;
+    width: 400px;
+}
+
+.samplePackBox {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 40px; /* Adjust the spacing between products */
+    padding: 20px; /* Add padding to the container */
+    justify-content: center;
+}
+
+.samplePack {
+    text-align: center;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.samplePack:hover {
+    transition: color 0.5s; /* Add a color transition animation */
+    transition: background-color 0.5s; /* Add a color transition animation */
+    color: white;
+    background-color: black;
+}
+
+.samplePack img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto;
+}
+
+.samplePack h4 {
+    font-family: monospace;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.samplePack p {
+    margin-top: -20px;
+    font-weight: 800;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.linkContacto h3{
+    font-size: 30px;
+
+}
+
+.linkContacto h3:hover {
+    transition: color 0.5s; /* Add a color transition animation */
+    transition: background-color 0.5s; /* Add a color transition animation */
+    color: white;
+    background-color: black;
+}
+
+.acercaDeRow1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.acercaDeRow1 p {
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+
+.whats  {
+    width: 80px;
+    position: fixed;
+    bottom: 20px;
+}
+
+
+form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+
+h1 {
+    margin: 0;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 46px;
+    letter-spacing: 0px;
+    font-size: 43px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+h2{
+    margin: 0;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+h3{
+    display: inline; /* Make the h3 inline so it only covers the text area */
+    padding: 5px 10px; /* Add padding to control the background size */
+    background-color:darkgray;
+    font-size: xx-large;
+    text-align: center;
+    font-family: monospace;
+}
+
+h4{
+    font-family: monospace;
+    font-size: x-small;
+}
+
+a{
+    color: black;
+    padding: 2px 10px 3px 10px;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li{
+    vertical-align: top;
+}
+
+
+/* 
+body{
+    background-image: url(../img/high-resolution-black-background-06.jpg);
+    background-size:auto;
+}
+ */

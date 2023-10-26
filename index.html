@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@347;403;470;550&display=swap" rel="stylesheet">
 </head>
-<!-- CONTENIDO DEL INDEX -->
-<!-- Foto Cool Grande -->
-<!-- Highlight Producciones -->
-<!-- Sample section quisas -->
-<!-- Trabajemos juntos q lleve a contacto -->
 
 <body>
     <div class="top-page">
@@ -36,32 +34,114 @@
                     </ul>
                 </nav>
             </div>
+
+            <div class="botonMenu">
+                <button id="menu-button">Menu</button>
+
+                <div id="menu-list">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html/trabajos.html">Trabajos</a></li>
+                        <li><a href="html/samples.html">Sample Packs</a></li>
+                        <li><a href="html/acerca-de.html">Acerca De</a></li>
+                        <li><a href="html/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </header>
     </div>
     <main>
         <div class="titulosMain linkContacto">
-            <a href="html/trabajos.html"><h3>Producciones</h3></a>
+            <a href="html/trabajos.html">
+                <h3>Producciones</h3>
+            </a>
         </div>
-        <div class="galeriaVideos">
-            <div class="videoClips">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5mQm-lofFsw?si=PiEUuD8ev6EV3XPF"
-                    title="YouTube video player" frameborder="0"
+        <div class="galeriaVideos snapsInline">
+            <!-- GALERIA CON VIDEOS -->
+            <!-- 
+                <div class="videoItem">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/5mQm-lofFsw?si=PiEUuD8ev6EV3XPF" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
+                    <p>Producer</p>
+            </div>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/guOIZKbvUwE?si=fKMcAYBigGkKpJ6_"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+            <div class="videoItem">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LQalQFccx2E?si=IFHACTMmYlAQglf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Beatmaker</p>
+            </div>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lHJ9pXXYPw8?si=udBFw2hg5zaRe5rC"
-                    title="YouTube video player" frameborder="0"
+            <div class="videoItem">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/guOIZKbvUwE?si=fKMcAYBigGkKpJ6_" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-            </div>\
+                    <p>Producer/Mixer/Mastering</p>
+            </div>
+
+            <div class="videoItem"><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/5rtoQ2OdpRI?si=AuM3ktSQscsr61bB" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                    <p>Producer/Composer/Mixer/Mastering</p>
+            </div>
+
+            <div class="videoItem"><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/lHJ9pXXYPw8?si=udBFw2hg5zaRe5rC" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                    <p>Producer/Composer/Mixer/Mastering</p>
+            </div>
+         -->
+
+         <!-- GALERIA CON SPOTIFY EMBEDS -->
+
+        <div class="videoItem">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4fuCbJLX2QcYzVXLwrkxsM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>Producer/Mixer</p>
+        </div>
+
+        <div class="videoItem">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0cFxnwfFKpAPtRTRy5U0dx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p>Beatmaker</p>
+        </div>
+
+        <div class="videoItem">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Ng7uPbsuGEXmKWvgV7x9I?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>Producer/Mixer/Mastering</p>
+        </div>
+
+        <div class="videoItem">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/63hbhxSRaW59WqKXGZPKnt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>Producer/Composer/Mixer/Mastering</p>
+        </div>
+
+        <div class="videoItem">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/21ZxaeODKlP364ccv1MDAZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>Producer/Mixer/Mastering</p>
+        </div>
+
+        <div class="videoItem">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6wG4o7ygOK7UAOxROByUg4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>Producer/Composer/Mixer/Mastering</p>
+        </div>
+
+        <div class="videoItem">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4TxT7Qgk9c2HX4KPlZH8iv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>Producer</p>
+        </div>
+
         </div>
         <div class="titulosMain linkContacto">
-            <a href="html/samples.html"><h3>Sample Packs</h3></a>
+            <a href="html/samples.html">
+                <h3>Sample Packs</h3>
+            </a>
         </div>
 
         <div class="samplePackBox">
@@ -88,12 +168,14 @@
                 <p>$20.00 USD</p>
             </div>
         </div>
-<br>
+        <br>
         <div class="titulosMain linkContacto">
-            <a href="html/contacto.html"><h3>Trabajemos juntos</h3></a>
+            <a href="html/contacto.html">
+                <h3>Trabajemos juntos</h3>
+            </a>
         </div>
 
-        <a href="https://api.whatsapp.com/send?phone=56963607250" >
+        <a href="https://api.whatsapp.com/send?phone=56963607250">
             <img class="whats" src="img/wsp.png" alt="Whatsapp">
         </a>
     </main>
@@ -101,6 +183,14 @@
     <footer>
         <h4>© Derechos reservados a Escesounds</h4>
     </footer>
+    <script>
+        const menuButton = document.getElementById("menu-button");
+        const menuList = document.getElementById("menu-list");
+
+        menuButton.addEventListener("click", function () {
+            menuList.classList.toggle("show-menu");
+        });
+    </script>
 </body>
 
 </html>

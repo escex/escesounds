@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mohave:wght@347;403;470;550&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="top-page">
         <header>
             <div class="logoTitulo">
@@ -32,8 +34,24 @@
                     </ul>
                 </nav>
             </div>
+
+            <div class="botonMenu">
+                <button id="menu-button">Menu</button>
+
+                <div id="menu-list">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="trabajos.html">Trabajos</a></li>
+                        <li><a href="samples.html">Sample Packs</a></li>
+                        <li><a href="acerca-de.html">Acerca De</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </header>
     </div>
+
 
     <main>
         <div class="formularioContacto">
@@ -68,6 +86,14 @@
     <footer>
         <h4>© Derechos reservados a Escesounds</h4>
     </footer>
+    <script>
+        const menuButton = document.getElementById("menu-button");
+        const menuList = document.getElementById("menu-list");
+
+        menuButton.addEventListener("click", function () {
+            menuList.classList.toggle("show-menu");
+        });
+    </script>
 
 </body>
 

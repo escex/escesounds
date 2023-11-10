@@ -12,6 +12,20 @@
         margin-top: 0px;
     }
 
+    .logoTitulo {
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+
+    @keyframes myAnim {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+
     ul li a:hover {
         transition: color 0.5s;
         transition: background-color 0.5s;
@@ -56,7 +70,6 @@
         font-family: 'Mohave', monospace;
         font-size: 18px;
         font-weight: 600;
-
     }
 
     .contentPadding {
@@ -67,6 +80,7 @@
         display: flex;
         flex-wrap: nowrap;
         overflow: auto;
+        animation: myAnim 2.8s ease 0s 1 normal forwards;
     }
 
 
@@ -75,7 +89,7 @@
         flex-direction: column;
         align-items: center;
         flex: 0 0 auto;
-        margin: 5px; 
+        margin: 5px;
         background-color: #ddd;
         border-radius: 10px;
     }
@@ -87,8 +101,6 @@
 
     iframe {
         width: 560px;
-        /*  para galeria de youtube*/
-        /*  height: 315px; */
         margin-right: 10px;
         margin-left: 10px;
         padding: 25px 8px 10px 8px;
@@ -107,7 +119,7 @@
         flex-direction: column;
         align-items: center;
         flex: 1 1 1;
-        margin: 5px; 
+        margin: 5px;
         background-color: #ddd;
         border-radius: 10px;
         height: 440px;
@@ -123,7 +135,7 @@
         scroll-snap-type: inline mandatory;
     }
 
-    .snapsInline > * {
+    .snapsInline>* {
         scroll-snap-align: center;
     }
 
@@ -131,6 +143,7 @@
         text-align: center;
         background-color: #f2f2f2;
         padding: 10px;
+        animation: myAnim 2s ease 0s 1 normal forwards;
     }
 
     .formularioContacto {
@@ -202,13 +215,34 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
+        margin: auto;
+        padding: 30px 30px 0px 30px;
+        width: 90%;
     }
 
     .acercaDeRow1 p {
         font-family: 'Mohave', monospace;
         font-size: 15px;
         font-weight: 600;
+    }
 
+
+    .studioFoto {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        -webkit-mask-image: linear-gradient(to right, black 5%, transparent);
+        mask-image: linear-gradient(black, transparent);
+    }
+
+    .acercaDeParrafo {
+        padding: 30px 10% 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acercaDeParrafo p {
+        font-size: 18px;
     }
 
     .whats {
@@ -254,9 +288,7 @@
 
     h3 {
         display: inline;
-        /* Make the h3 inline so it only covers the text area */
         padding: 5px 10px;
-        /* Add padding to control the background size */
         background-color: darkgray;
         font-size: xx-large;
         text-align: center;
@@ -316,13 +348,13 @@
         font-weight: 550;
         cursor: pointer;
     }
-    
+
     #menu-list {
         margin: 0;
         padding: 5px;
         display: none;
     }
-    
+
     #menu-list li {
         padding: 10px;
         text-align: center;
@@ -332,14 +364,16 @@
         display: flex;
     }
 
-    /* 
-body{
-    background-image: url(../img/high-resolution-black-background-06.jpg);
-    background-size:auto;
-}
- */
+    .smallScreen {
+        display: none;
+    }
 
-    /* RESPONSIVE */
+    .mediaBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     @media screen and (max-width: 1000px) {
         .navegador {
@@ -351,6 +385,7 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 0 0 10px 0;
         }
 
         .top-page {
@@ -387,8 +422,42 @@ body{
             padding: 0 15px;
         }
 
+        .titulosMain {
+            background-color: transparent;
+        }
+
         .titulosMain p {
             padding: 20px 0 0 0;
             font-size: 15px;
+        }
+
+        .studioFoto {
+            display: none;
+        }
+
+        .acercaDePage {
+            /* background-image: url(../img/Studiophoto1.jpeg); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0;
+        }
+
+        .acercaDeParrafo {
+            background-color:rgba(255, 255, 255, 0.75);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.75);
+        }
+
+        .acercaDeBody {
+            margin: 0;
+        }
+
+        .hideButton {
+            display: none;
+        }
+
+        .smallScreen {
+            display: inline;
         }
     }

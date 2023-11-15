@@ -1,4 +1,4 @@
-/* HEADER */
+@import "variables", "mixin","footer";
 
 .top-page {
     position: relative;
@@ -27,11 +27,8 @@
     }
   }
   
-  ul li a:hover {
-    transition: color 0.5s;
-    transition: background-color 0.5s;
-    color: white;
-    background-color: black;
+  ul li a {
+    @include hover-effect;
   }
   
   .navegador nav {
@@ -60,14 +57,14 @@
   }
   
   .titulosMain p {
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
     margin-top: 10px;
     font-size: 18px;
     font-weight: 800;
   }
   
   p {
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
     font-size: 18px;
     font-weight: 600;
   }
@@ -150,7 +147,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
   }
   
   .mensajeContacto {
@@ -170,13 +167,7 @@
   .samplePack {
     text-align: center;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
-  
-    &:hover {
-      transition: color 0.5s;
-      transition: background-color 0.5s;
-      color: white;
-      background-color: black;
-    }
+    @include hover-effect;
   
     img {
       max-width: 100%;
@@ -184,7 +175,7 @@
     }
   
     h4 {
-      font-family: 'Mohave', monospace;
+      font-family: $font-family;
       margin-top: 10px;
       font-size: 15px;
     }
@@ -192,20 +183,14 @@
     p {
       margin-top: -20px;
       font-weight: 800;
-      font-family: 'Mohave', monospace;
+      font-family: $font-family;
       font-size: 12px;
     }
   }
   
   .linkContacto h3 {
     font-size: 30px;
-  
-    &:hover {
-      transition: color 0.5s;
-      transition: background-color 0.5s;
-      color: white;
-      background-color: black;
-    }
+    @include hover-effect;
   }
   
   .acercaDeRow1 {
@@ -217,7 +202,7 @@
     width: 90%;
   
     p {
-      font-family: 'Mohave', monospace;
+      font-family: $font-family;
       font-size: 15px;
       font-weight: 600;
     }
@@ -242,9 +227,10 @@
   }
   
   .whats {
-    width: 80px;
+    width: 60px;
     position: fixed;
     bottom: 20px;
+    right: 50px;
   }
   
   form {
@@ -259,7 +245,7 @@
   
   h1 {
     margin: 0;
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
     font-weight: 550;
     font-size: 46px;
     letter-spacing: 0px;
@@ -275,7 +261,7 @@
   
   h2 {
     margin: 0;
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
     font-weight: 400;
     letter-spacing: 3px;
   }
@@ -286,12 +272,12 @@
     background-color: darkgray;
     font-size: xx-large;
     text-align: center;
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
     border-radius: 5px;
   }
   
   h4 {
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
     font-size: x-small;
   }
   
@@ -299,7 +285,7 @@
     color: black;
     padding: 2px 10px 3px 10px;
     text-decoration: none;
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
     font-weight: bold;
   }
   
@@ -323,12 +309,7 @@
   }
   
   #menu-button {
-    &:hover {
-      transition: color 0.5s;
-      transition: background-color 0.5s;
-      color: white;
-      background-color: black;
-    }
+    @include hover-effect;
   
     margin-top: 10px;
     border: solid 1px black;
@@ -337,7 +318,7 @@
     background-color: white;
     padding: 2px 10px 3px 10px;
     text-decoration: none;
-    font-family: 'Mohave', monospace;
+    font-family: $font-family;
     font-weight: 550;
     cursor: pointer;
   }
@@ -367,6 +348,8 @@
     justify-content: space-between;
     align-items: center;
   }
+
+
   
   @media screen and (max-width: 1000px) {
     .navegador {
@@ -452,6 +435,12 @@
   
     .smallScreen {
       display: inline;
+    }
+    .fotoDj {
+      width: 200px;
+      height: auto;
+      float: right;
+      opacity: 0.9;
     }
   }
   

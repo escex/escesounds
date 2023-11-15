@@ -1,4 +1,27 @@
-/* HEADER */
+footer {
+  background-color: #e0e0e0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-media a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-media img {
+  width: 30px;
+  margin-right: 10px;
+}
+
 .top-page {
   position: relative;
   height: 84px;
@@ -228,9 +251,10 @@ iframe {
 }
 
 .whats {
-  width: 80px;
+  width: 60px;
   position: fixed;
   bottom: 20px;
+  right: 50px;
 }
 
 form {
@@ -420,6 +444,12 @@ li {
   }
   .smallScreen {
     display: inline;
+  }
+  .fotoDj {
+    width: 200px;
+    height: auto;
+    float: right;
+    opacity: 0.9;
   }
 }
 

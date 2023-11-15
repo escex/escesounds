@@ -1,0 +1,8 @@
+@mixin hover-effect {
+    &:hover {
+        transition: color 0.5s;
+        transition: background-color 0.5s;
+        color: white;
+        background-color: black;
+    }
+}

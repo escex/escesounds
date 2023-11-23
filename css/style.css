@@ -108,7 +108,7 @@ p {
   align-items: center;
   flex: 0 0 auto;
   margin: 5px;
-  background-color: #ddd;
+  background-color: whitesmoke;
   border-radius: 10px;
 }
 .videoItem p {
@@ -293,10 +293,10 @@ h2 {
 h3 {
   display: inline;
   padding: 5px 10px;
-  background-color: darkgray;
+  background-color: whitesmoke;
   font-size: xx-large;
   text-align: center;
-  font-family: "Mohave", monospace;
+  font-family: "Bebas Neue";
   border-radius: 5px;
 }
 
